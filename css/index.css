@@ -1,0 +1,297 @@
+@media screen and (min-width: 1100px) {
+  .index-layout {
+    --_grid-col-gap: 2rem;
+    --_grid-row-gap: 1rem;
+    --_padding-inline: 3rem;
+
+    width: 100%;
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'header banner'
+      'form banner';
+    gap: var(--_grid-row-gap) var(--_grid-col-gap);
+  }
+
+  .index-layout .header {
+    grid-area: header;
+  }
+
+  .index-layout .banner {
+    --_gradient-start: hsla(0, 0%, 0%, 0) 0%;
+    --_gradient-end: hsla(0, 0%, 0%, 1) 85%;
+    --_gradient-angle: to bottom;
+
+    --_banner-text-size: 8.5rem;
+    --_banner-text-letter-spacing: -4px;
+    --_banner-text-align: left;
+    --_banner-text-max-width: 10ch;
+    --_banner-text-margin-left: 0;
+
+    grid-area: banner;
+    height: 100%;
+  }
+
+  .index-layout .form-container {
+    grid-area: form;
+    align-self: center;
+  }
+}
+
+/** FORM HEADING */
+.form-container {
+  --_form-heading-text-align: center;
+  --_form-heading-text-size: 2.5rem;
+  --_form-heading-line-height: 1.25em;
+  --_form-heading-max-width: 20ch;
+  --_form-heading-font-weight: 900;
+  --_form-heading-font-family: 'Helvetica-condensed', sans-serif;
+  --_form-heading-curve-bottom: -0.5em;
+}
+
+[lang='ur'] .form-container {
+  --_form-heading-text-size: 3.25rem;
+  --_form-heading-font-weight: 500;
+  --_form-heading-font-family: 'aa-sameer-armaa-unicode', sans-serif;
+  --_form-heading-curve-bottom: -0.75em;
+}
+
+.form-container__heading {
+  font-family: var(--_form-heading-font-family);
+  font-size: var(--_form-heading-text-size);
+  font-weight: var(--_form-heading-font-weight);
+  text-align: var(--_form-heading-text-align);
+  line-height: var(--_form-heading-line-height);
+
+  width: 100%;
+  max-width: var(--_form-heading-max-width);
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.85em;
+}
+
+.form-container__heading span {
+  position: relative;
+  display: inline-block;
+}
+
+.form-container__heading span::after {
+  content: url('../assets/svg/curve-1.svg');
+  position: absolute;
+  bottom: var(--_form-heading-curve-bottom);
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-inline: auto;
+}
+/* END FORM HEADING */
+
+.membership-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.form-group input[type='text'],
+.form-group input[type='tel'],
+.form-group input[type='email'],
+.form-group select {
+  width: 100%;
+  font: inherit;
+  padding: 0.75rem 1.125rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  background-color: #f5f7f9;
+  border: 2px solid #d1d5db;
+  outline: none;
+  line-height: 1;
+}
+
+.form-group input[type='text']:focus,
+.form-group input[type='tel']:focus,
+.form-group input[type='email']:focus,
+.form-group select:focus {
+  background: linear-gradient(#f5f7f9, #f5f7f9) padding-box,
+    linear-gradient(to right, #0a9eda, #0ca341) border-box;
+  border-color: transparent;
+}
+
+/** GENDER OPTION */
+.gender-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.gender-options__item.gender-options__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+
+.gender-options__item input[type='radio'] {
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f8fa;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.gender-options__item span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-inline-start: 1.125rem;
+  font-weight: normal;
+
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.gender-options__item input[type='radio']:checked {
+  background-color: #d5e9f1;
+}
+
+.gender-options__item input[type='radio']:checked + span::before {
+  content: url('../assets/svg/tick.svg');
+  width: 1.5rem;
+  height: 1.5rem;
+}
+/** GENDER OPTION END  */
+
+/** SELECT */
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  inset-inline-end: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translateY(-50%);
+  background-image: url('../assets/svg/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.membership-form .button {
+  width: 100%;
+}
+
+.select-wrapper select {
+  appearance: none;
+  line-height: 1.5;
+}
+/** SELECT END */
+
+.intl-tel-input-wrapper {
+  width: 100%;
+}
+
+.required,
+.error {
+  color: #b52222;
+}
+
+@media screen and (min-width: 1100px) {
+  .form-container {
+    --_form-heading-text-align: left;
+    --_form-heading-max-width: unset;
+    --_form-heading-text-size: 3.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [lang='ur'] .form-container {
+    --_form-heading-text-size: 4.5rem;
+    --_form-heading-text-align: right;
+  }
+
+  .membership-form {
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      'name name'
+      'gender year-of-birth'
+      'country city'
+      'whatsapp-number profession'
+      'email email'
+      'button button';
+  }
+
+  [lang='ur'] .membership-form {
+    grid-template-areas:
+      'name name'
+      'year-of-birth gender'
+      'city country'
+      'profession whatsapp-number'
+      'email email'
+      'button button';
+  }
+
+  .membership-form [data-form-group='name'] {
+    grid-area: name;
+  }
+
+  .membership-form [data-form-group='gender'] {
+    grid-area: gender;
+  }
+
+  .membership-form [data-form-group='year-of-birth'] {
+    grid-area: year-of-birth;
+  }
+
+  .membership-form [data-form-group='country'] {
+    grid-area: country;
+  }
+
+  .membership-form [data-form-group='city'] {
+    grid-area: city;
+  }
+
+  .membership-form [data-form-group='whatsapp-number'] {
+    grid-area: whatsapp-number;
+  }
+
+  .membership-form [data-form-group='email'] {
+    grid-area: email;
+  }
+
+  .membership-form [data-form-group='profession'] {
+    grid-area: profession;
+  }
+
+  .membership-form [data-form-group='button'] {
+    grid-area: button;
+  }
+
+  .membership-form .button {
+    margin-left: auto;
+    width: unset;
+  }
+
+  [lang='ur'] .membership-form .button {
+    margin-left: unset;
+    margin-right: auto;
+  }
+}

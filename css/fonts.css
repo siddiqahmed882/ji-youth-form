@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+  font-family: 'Helvetica-condensed';
+  src: url('../assets/font/helvetica-condensed-black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'aa-sameer-armaa-unicode';
+  src: url('../assets/font/aa-sameer-armaa-unicode.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'alvi-nastaleeq';
+  src: url('../assets/font/alvi-nastaleeq.ttf') format('truetype');
+}
+
+.font-aa-sameer-armaa-unicode {
+  font-family: 'aa-sameer-armaa-unicode', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.font-alvi-nastaleeq {
+  font-family: 'alvi-nastaleeq', sans-serif !important;
+  font-size: 1.125em;
+}
+
+.font-helvetica-condensed {
+  font-family: 'Helvetica-condensed', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+html[lang='en'] {
+  font-family: 'Inter', sans-serif;
+}
+
+html[lang='ur'] {
+  font-family: 'alvi-nastaleeq', sans-serif;
+}

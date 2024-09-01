@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ur">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/external/intl-tel-input.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="prefetch" href="../en/index.html">
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+  <title>Jamaat-e-Islami, Membership Drive</title>
+</head>
+
+<body>
+  <div class="wrapper index-layout">
+    <header class="header" dir="ltr" translate="no">
+      <img src="../assets/images/logo.png" alt="Logo" class="logo">
+
+      <!-- LANGUAGE SWITCHER START -->
+      <div class="language-switcher">
+        <a class="lang-button font-inter" href="../en/index.html" data-lang="en">
+          <span class="lang-button__tick">
+            <img src="../assets/svg/tick.svg" alt="Tick">
+          </span>
+          <span class="lang-button__text">
+            English
+          </span>
+        </a>
+        <a class="lang-button active" href="#" dir="rtl" data-lang="ur">
+          <span class="lang-button__tick">
+            <img src="../assets/svg/tick.svg" alt="Tick">
+          </span>
+          <span class="lang-button__text">
+            اردو
+          </span>
+        </a>
+      </div>
+      <!-- LANGUAGE SWITCHER END -->
+    </header>
+
+
+    <!-- BANNER START -->
+    <div class="banner" dir="ltr" translate="no">
+      <img src="../assets/images/banner-01.webp" alt="Join Now, Be the Change" class="banner__image">
+      <p class="banner__text">
+        <span class="highlight-gradient"> Join Now, </span><br />
+        Be the Change
+      </p>
+    </div>
+    <!-- BANNER END -->
+
+    <!-- FORM START -->
+    <div class="form-container font-alvi-nastaleeq">
+      <h2 class="form-container__heading" dir="rtl">جماعت اسلامی،
+        <span class="highlight-gradient">ممبر سازی </span>
+        مہم
+      </h2>
+
+      <form id="membership-form" class="membership-form">
+        <div class="form-group" data-form-group="name" dir="rtl">
+          <label for="name">
+            نام
+            <span class="required">*</span>
+          </label>
+          <input type="text" id="name" name="name" value="" required placeholder="اپنا نام درج کریں" />
+        </div>
+
+        <div class="form-group" data-form-group="year-of-birth" dir="rtl">
+          <label for="year-of-birth">
+            سال پیدائش
+            <span class="required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="year-of-birth" name="year-of-birth" required>
+              <option value="" hidden selected>سال منتخب کریں</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="gender" dir="rtl">
+          <label for="gender">
+            جنس
+            <span class="required">*</span>
+          </label>
+          <div class="gender-options">
+            <label class="gender-options__item" for="male"><input type="radio" id="male" name="gender" value="male"
+                checked>
+              <span>مرد</span>
+            </label>
+            <label class="gender-options__item" for="female"><input type="radio" id="female" name="gender"
+                value="female">
+              <span>عورت</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="country" dir="rtl">
+          <label for="country">
+            ملک
+            <span class="required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="country" name="country" required>
+              <option value="" selected hidden>ملک منتخب کریں</option>
+              <option value="Pakistan">پاکستان</option>
+              <option value="India">انڈین</option>
+              <option value="Afghanistan">افغانستان</option>
+              <option value="Iran">ایران</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="city" dir="rtl">
+          <label for="city">
+            شہر
+            <span class="required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="city" name="city" required>
+              <option value="" selected hidden>شہر منتخب کریں</option>
+              <option value="Lahore">لاہور</option>
+              <option value="Karachi">کراچی</option>
+              <option value="Islamabad">اسلام آباد</option>
+              <option value="Rawalpindi">روالپنڈ</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="whatsapp-number">
+          <label for="whatsapp-number" dir="rtl">
+            واٹس ایپ نمبر
+            <span class="required">*</span>
+          </label>
+          <input type="tel" id="whatsapp-number" name="whatsapp-number" value="+92 " required placeholder="" />
+        </div>
+
+        <div class="form-group" data-form-group="profession" dir="rtl">
+          <label for="profession">پیشہ<span class="required">*</span></label>
+          <div class="select-wrapper">
+            <select id="profession" name="profession" required>
+              <option value="" selected hidden>اپنا پیشہ منتخب کریں</option>
+              <option value="Student">طالب علم</option>
+              <option value="Housewife">گھر والی</option>
+              <option value="Govt Job">سرکاری ملازم</option>
+              <option value="Private Job">نجی ملازم</option>
+              <option value="Shopkeeper">دکاندار</option>
+              <option value="Business">کاروباری</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="email">
+          <label for="email" dir="rtl">ای میل (اختیاری)</label>
+          <input type="email" id="email" name="email" placeholder="اپنا ای میل درج کریں" dir="rtl" />
+        </div>
+        <div class="form-group" data-form-group="button" dir="rtl">
+          <button type="submit" class="button"> ارسال کریں</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/external/intl-tel-input.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

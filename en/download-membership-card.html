@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/membership-card.css">
+
+  <title>Jamaat-e-Islami, Membership Drive</title>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+</head>
+
+<body>
+  <div class="wrapper index-layout">
+    <header class="header" dir="ltr">
+      <img src="../assets/images/logo.png" alt="Logo" class="logo">
+
+      <!-- LANGUAGE SWITCHER START -->
+      <div class="language-switcher">
+        <a class="lang-button active" href="#" data-lang="en">
+          <span class="lang-button__tick">
+            <img src="../assets/svg/tick.svg" alt="Tick">
+          </span>
+          <span class="lang-button__text">
+            English
+          </span>
+        </a>
+        <a class="lang-button" href="#" dir="rtl" data-lang="ur">
+          <span class="lang-button__tick">
+            <img src="../assets/svg/tick.svg" alt="Tick">
+          </span>
+          <span class="lang-button__text">
+            اردو
+          </span>
+        </a>
+      </div>
+      <!-- LANGUAGE SWITCHER END -->
+    </header>
+
+    <!-- BANNER START -->
+    <div class="banner" dir="ltr">
+      <img src="../assets/images/banner-01.webp" alt="Join Now, Be the Change" class="banner__image">
+      <p class="banner__text font-helvetica-condensed">
+        <span class="highlight-gradient"> Join Now, </span><br />
+        Be the Change
+      </p>
+    </div>
+    <!-- BANNER END -->
+
+
+    <div class="page-content">
+      <h1 class="page-content__title font-helvetica-condensed">Jamaat-e-Islami,
+        <span class="highlight-gradient">Membership</span> Drive
+      </h1>
+      <div class="membership-card-container">
+        <div id="card" class="membership-card">
+          <div class="card-header">
+            <img src="../assets/svg/membership-card-header.svg" alt="Member Photo">
+          </div>
+          <div class="upload-section">
+            <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+            <div class="upload-box" data-image-upload-btn>
+              <button class="button">Tap to upload photo</button>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="name">Loading...</h3>
+            <p class="address">Loading...</p>
+            <p class="id">Loading...</p>
+          </div>
+          <img src="../assets/svg/membership-card-ribbon.svg" class="card-footer" alt="Member Photo">
+        </div>
+        <div class="buttons">
+          <button class="button" data-download-btn>Download as PNG</button>
+          <a class="button button-secondary" href="./form-submission-success.html">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+  <script src="../js/membership-card.js"></script>
+</body>
+
+</html>

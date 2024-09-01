@@ -1,0 +1,166 @@
+@media screen and (min-width: 1100px) {
+  .index-layout {
+    --_grid-col-gap: 2rem;
+    --_grid-row-gap: 1rem;
+    --_padding-inline: 3rem;
+
+    width: 100%;
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'header banner'
+      'page-content banner';
+    gap: var(--_grid-row-gap) var(--_grid-col-gap);
+  }
+
+  .index-layout .header {
+    grid-area: header;
+  }
+
+  .index-layout .page-content {
+    grid-area: page-content;
+  }
+
+  .index-layout .banner {
+    --_gradient-start: hsla(0, 0%, 0%, 0) 0%;
+    --_gradient-end: hsla(0, 0%, 0%, 1) 85%;
+    --_gradient-angle: to bottom;
+
+    --_banner-text-size: 8.5rem;
+    --_banner-text-letter-spacing: -4px;
+    --_banner-text-align: left;
+    --_banner-text-max-width: 10ch;
+    --_banner-text-margin-left: 0;
+
+    grid-area: banner;
+    height: 100%;
+  }
+
+  .index-layout .form-container {
+    grid-area: form;
+    align-self: center;
+  }
+}
+
+.page-content {
+  --_page-heading-text-align: center;
+  --_page-heading-text-size: 2.5rem;
+  --_page-heading-line-height: 1.25em;
+  --_page-heading-max-width: 20ch;
+  --_page-heading-font-weight: 900;
+  --_page-heading-font-family: 'Helvetica-condensed', sans-serif;
+  --_page-heading-curve-bottom: -0.5em;
+}
+
+.page-content__title {
+  font-family: var(--_page-heading-font-family);
+  font-size: var(--_page-heading-text-size);
+  font-weight: var(--_page-heading-font-weight);
+  text-align: var(--_page-heading-text-align);
+  line-height: var(--_page-heading-line-height);
+
+  width: 100%;
+  max-width: var(--_page-heading-max-width);
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.85em;
+}
+
+.page-content__title span {
+  position: relative;
+  display: inline-block;
+}
+
+.page-content__title span::after {
+  content: url('../assets/svg/curve-1.svg');
+  position: absolute;
+  bottom: var(--_page-heading-curve-bottom);
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.membership-card-container {
+  display: grid;
+  place-items: center;
+}
+
+.membership-card {
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #faf9f6;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+
+  .button {
+    padding: 0.75rem 1rem;
+  }
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.upload-section {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upload-box {
+  width: 100%;
+  height: 100%;
+  border: 2px dashed #ddd;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.member-info {
+  margin: 1rem auto;
+}
+
+.member-info > * + * {
+  margin-top: 0.75rem;
+}
+
+.member-info .name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.member-info .address {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #40bd3d;
+}
+
+.page-content .buttons {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.card-footer {
+  width: 100%;
+}

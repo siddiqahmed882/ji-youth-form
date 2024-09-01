@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/external/intl-tel-input.css">
+
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="prefetch" href="../ur/index.html">
+  <title>Jamaat-e-Islami, Membership Drive</title>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+</head>
+
+<body>
+  <div class="wrapper index-layout">
+    <header class="header" dir="ltr">
+      <img src="../assets/images/logo.png" alt="Logo" class="logo">
+
+      <!-- LANGUAGE SWITCHER START -->
+      <div class="language-switcher">
+        <a class="lang-button active" href="#" data-lang="en">
+          <span class="lang-button__tick">
+            <img src="../assets/svg/tick.svg" alt="Tick">
+          </span>
+          <span class="lang-button__text">
+            English
+          </span>
+        </a>
+        <a class="lang-button" href="../ur/index.html" dir="rtl" data-lang="ur">
+          <span class="lang-button__tick">
+            <img src="../assets/svg/tick.svg" alt="Tick">
+          </span>
+          <span class="lang-button__text">
+            اردو
+          </span>
+        </a>
+      </div>
+      <!-- LANGUAGE SWITCHER END -->
+    </header>
+
+    <!-- BANNER START -->
+    <div class="banner" dir="ltr">
+      <img src="../assets/images/banner-01.webp" alt="Join Now, Be the Change" class="banner__image">
+      <p class="banner__text font-helvetica-condensed">
+        <span class="highlight-gradient"> Join Now, </span><br />
+        Be the Change
+      </p>
+    </div>
+    <!-- BANNER END -->
+
+    <!-- FORM START -->
+    <div class="form-container">
+      <h1 class="form-container__heading font-helvetica-condensed">Jamaat-e-Islami,
+        <span class="highlight-gradient">Membership</span> Drive
+      </h1>
+
+      <form id="membership-form" class="membership-form">
+        <div class="form-group" data-form-group="name">
+          <label for="name">Name<span class="required">*</span>
+          </label>
+          <input type="text" id="name" name="name" value="" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-group" data-form-group="year-of-birth">
+          <label for="year-of-birth">Year of Birth<span class="required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="year-of-birth" name="year-of-birth">
+              <option value="" hidden selected>Select Year</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="gender">
+          <label for="gender">Gender<span class="required">*</span>
+          </label>
+          <div class="gender-options">
+            <label class="gender-options__item" for="male"><input type="radio" id="male" name="gender" value="male"
+                checked>
+              <span>Male</span>
+            </label>
+            <label class="gender-options__item" for="female"><input type="radio" id="female" name="gender"
+                value="female">
+              <span>Female</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="country">
+          <label for="country">Country<span class="required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="country" name="country" required>
+              <option value="" selected hidden>Select Your Country</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="India">India</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Iran">Iran</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="city">
+          <label for="city">City<span class="required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="city" name="city" required>
+              <option value="" selected hidden>Select Your City</option>
+              <option value="Lahore">Lahore</option>
+              <option value="Karachi">Karachi</option>
+              <option value="Islamabad">Islamabad</option>
+              <option value="Rawalpindi">Rawalpindi</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="whatsapp-number">
+          <label for="whatsapp-number">
+            WhatsApp Number<span class="required">*</span>
+          </label>
+          <input type="tel" id="whatsapp-number" name="whatsapp-number" value="" required placeholder="" />
+        </div>
+
+        <div class="form-group" data-form-group="profession">
+          <label for="profession">Profession<span class="required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="profession" name="profession" required>
+              <option value="" selected hidden>Select Your Profession</option>
+              <option value="Student">Student</option>
+              <option value="Housewife">Housewife</option>
+              <option value="Govt Job">Govt Job</option>
+              <option value="Private Job">Private Job</option>
+              <option value="Shopkeeper">Shopkeeper</option>
+              <option value="Business">Business</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" data-form-group="email">
+          <label for="email">Email (Optional)</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-group" data-form-group="button">
+          <button type="submit" class="button">Next</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/external/intl-tel-input.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
