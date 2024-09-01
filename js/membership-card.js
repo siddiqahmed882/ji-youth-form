@@ -37,7 +37,7 @@ async function addDataToCard() {
   const membershipData = await fetchApiData(API_URL(id));
   nameElem.innerText = membershipData.name;
   addressElem.innerText = `${membershipData.city}, ${membershipData.country}`;
-  idElem.innerText = generateRandomId();
+  idElem.innerText = `KHI-JAMAAT-${generateRandomId()}`;
 }
 
 function triggerUpload() {
