@@ -4,18 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/page-2.css">
-  <title>Jamaat-e-Islami, Membership Drive</title>
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/app.css">
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+  <title>Jamaat-e-Islami, Membership Drive</title>
 </head>
 
 <body>
-  <div class="wrapper index-layout">
-    <header class="header" dir="ltr">
+  <div class="wrapper app-layout">
+    <header class="header" data-layout-group="header">
       <img src="../assets/images/logo.webp" alt="Logo" class="logo">
 
       <!-- LANGUAGE SWITCHER START -->
@@ -41,7 +40,7 @@
     </header>
 
     <!-- BANNER START -->
-    <div class="banner" dir="ltr">
+    <div class="banner" data-layout-group="banner">
       <img src="../assets/images/banner-01.webp" alt="Join Now, Be the Change" class="banner__image">
       <p class="banner__text font-helvetica-condensed">
         <span class="highlight-gradient"> Join Now, </span><br />
@@ -50,30 +49,15 @@
     </div>
     <!-- BANNER END -->
 
-    <!-- FORM START -->
-    <div class="form-container">
-      <h1 class="form-container__heading font-helvetica-condensed">Jamaat-e-Islami,
-        <span class="highlight-gradient">Membership</span> Drive
-      </h1>
+    <main class="app" data-layout-group="content">
+      <div class="app__message">
+        <h1 class="font-helvetica-condensed">
+          <strong>App will be available for download by 8pm evening, InshaAllah</strong>
+        </h1>
+      </div>
 
-      <form id="community-form">
-        <p class="form-container__text">
-          <span class="english">
-            As a member, would you like to participate in any of these initiatives with Jamaat-e-Islami?
-          </span>
-          <span class="urdu">اسلامی کے ممبر کی حیثیت سے آپ ان میں سے کن امور میں ساتھ دے سکتے ہیں؟</span>
-        </p>
-        <div class="activities-list">
-        </div>
-
-        <p class="error" hidden data-form-error></p>
-
-        <button type="submit" class="button">Submit</button>
-      </form>
-    </div>
+    </main>
   </div>
-
-  <script src="../js/page-2.js"></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 @media screen and (min-width: 1100px) {
-  .form-submission-success-layout {
+  .app-layout {
     --_grid-col-gap: 2rem;
     --_grid-row-gap: 1rem;
 
@@ -14,15 +14,15 @@
     gap: var(--_grid-row-gap) var(--_grid-col-gap);
   }
 
-  [lang='ur'] .form-submission-success-layout {
+  [lang='ur'] .app-layout {
     --_padding-inline: 3rem;
   }
 
-  .form-submission-success-layout [data-layout-group='header'] {
+  .app-layout [data-layout-group='header'] {
     grid-area: header;
   }
 
-  .form-submission-success-layout [data-layout-group='banner'] {
+  .app-layout [data-layout-group='banner'] {
     --_gradient-start: hsla(0, 0%, 0%, 0) 0%;
     --_gradient-end: hsla(0, 0%, 0%) 75%;
     --_gradient-angle: to bottom;
@@ -37,17 +37,17 @@
     height: 100%;
   }
 
-  .form-submission-success-layout [data-layout-group='content'] {
+  .app-layout [data-layout-group='content'] {
     grid-area: content;
     align-self: center;
   }
 }
 
-.form-submission-success {
+.app {
   text-align: center;
 }
 
-.form-submission-success > * {
+.app > * {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,49 +55,27 @@
   gap: 1rem;
 }
 
-.form-submission-success > *:not(:last-child) {
+.app > *:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
-.form-submission-success__message h1 {
+.app__message h1 {
   --_font-size: 2.25rem;
   font-size: var(--_font-size);
 }
 
-.form-submission-success__details p {
-  --_font-size: 1rem;
-  --_font-weight: 500;
-
-  color: hsla(0, 0%, 0%, 0.5);
-  font-size: var(--_font-size);
-  font-weight: var(--_font-weight);
-}
-
-[lang='ur'] .form-submission-success__details p {
-  --_font-size: 1.25rem;
-  --_font-weight: 600;
-}
-
-.form-submission-success__details .buttons-group {
+.download-buttons-group {
   display: grid;
   gap: 1rem;
 }
 
+.download-buttons-group .button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 @media screen and (min-width: 1100px) {
-  .form-submission-success__message h1 {
+  .app__message h1 {
     --_font-size: 3.5rem;
-  }
-
-  .form-submission-success__details p {
-    --_font-size: 1.125rem;
-    --_font-weight: 600;
-  }
-
-  [lang='ur'] .form-submission-success__details p {
-    --_font-size: 1.5rem;
-  }
-
-  [lang='ur'] .form-submission-success__message h1 {
-    --_font-size: 4rem;
   }
 }

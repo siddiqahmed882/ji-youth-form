@@ -1,5 +1,5 @@
 const LOCAL_STORAGE_KEY = 'membership-drive-form-data';
-const API_URL = 'http://reports.karachijamaat.pk/api/v1/membership';
+const API_URL = 'https://reports.karachijamaat.pk/api/v1/membership';
 const NEXT_PAGE_URL = (id) => '../en/download-membership-card.html?id=' + id;
 
 const ACTIVITIES = [

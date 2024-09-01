@@ -37,7 +37,7 @@ async function addDataToCard() {
   const membershipData = await fetchApiData(API_URL(id));
   nameElem.innerText = membershipData.name;
   addressElem.innerText = `${membershipData.city}, ${membershipData.country}`;
-  idElem.innerText = `${membershipData.id}`;
+  idElem.innerText = generateRandomId();
 }
 
 function triggerUpload() {
@@ -113,6 +113,14 @@ function downloadCard() {
       .querySelector('[data-image-upload-btn]')
       .addEventListener('click', triggerUpload);
   }
+}
+
+function generateRandomId() {
+  // random id of 8 digits
+  const randomId = Math.floor(Math.random() * 100_000_000)
+    .toString()
+    .padStart(8, '0');
+  return randomId;
 }
 
 async function fetchApiData(url) {

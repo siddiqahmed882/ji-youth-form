@@ -4,9 +4,9 @@ const defaultSelectedCountry = 'pakistan';
 const defaultSelectedCity = 'karachi';
 const NEXT_PAGE_URL = '../en/page-2.html';
 
-const COUNTRIES_API_URL = 'http://reports.karachijamaat.pk/api/v1/countries/list';
+const COUNTRIES_API_URL = 'https://reports.karachijamaat.pk/api/v1/countries/list';
 const CITIES_API_URL = (id) =>
-  'http://reports.karachijamaat.pk/api/v1/cities/list?country_id=' + id;
+  'https://reports.karachijamaat.pk/api/v1/cities/list?country_id=' + id;
 
 const language = document.documentElement.lang;
 
