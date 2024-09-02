@@ -1,4 +1,4 @@
-@media screen and (min-width: 1100px) {
+/* @media screen and (min-width: 1100px) {
   .app-layout {
     --_grid-col-gap: 2rem;
     --_grid-row-gap: 1rem;
@@ -41,7 +41,7 @@
     grid-area: content;
     align-self: center;
   }
-}
+} */
 
 .app {
   text-align: center;
@@ -74,8 +74,8 @@
   height: 1.5rem;
 }
 
-@media screen and (min-width: 1100px) {
+/* @media screen and (min-width: 1100px) {
   .app__message h1 {
     --_font-size: 3.5rem;
   }
-}
+} */

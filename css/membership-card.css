@@ -1,4 +1,4 @@
-@media screen and (min-width: 1100px) {
+/* @media screen and (min-width: 1100px) {
   .index-layout {
     --_grid-col-gap: 2rem;
     --_grid-row-gap: 1rem;
@@ -42,7 +42,7 @@
     grid-area: form;
     align-self: center;
   }
-}
+} */
 
 .page-content {
   --_page-heading-text-align: center;
